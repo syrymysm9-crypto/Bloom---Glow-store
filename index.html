@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Bloom & Glow Shop</title>
+<link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+<header class='header'>
+<h1>🌸 Bloom & Glow</h1>
+<div class='cart' onclick='toggleCart()'>🛒 <span id='count'>0</span></div>
+</header>
+
+<h2 class='title'>Our Products</h2>
+
+<div class='grid'>
+
+    <div class='card'>
+        <img src='assets/product1.png'>
+        <h3>Hydrating Face Cream</h3>
+        <p class='price'>SAR 82</p>
+        <button onclick="addToCart('Hydrating Face Cream',82)">Add to Cart</button>
+    </div>
+    
+    <div class='card'>
+        <img src='assets/product2.png'>
+        <h3>Vitamin C Serum</h3>
+        <p class='price'>SAR 135</p>
+        <button onclick="addToCart('Vitamin C Serum',135)">Add to Cart</button>
+    </div>
+    
+    <div class='card'>
+        <img src='assets/product3.png'>
+        <h3>Gentle Cleanser</h3>
+        <p class='price'>SAR 98</p>
+        <button onclick="addToCart('Gentle Cleanser',98)">Add to Cart</button>
+    </div>
+    
+    <div class='card'>
+        <img src='assets/product4.png'>
+        <h3>Face Mask</h3>
+        <p class='price'>SAR 95</p>
+        <button onclick="addToCart('Face Mask',95)">Add to Cart</button>
+    </div>
+    
+    <div class='card'>
+        <img src='assets/product5.png'>
+        <h3>Brightening Serum Spray</h3>
+        <p class='price'>SAR 110</p>
+        <button onclick="addToCart('Brightening Serum Spray',110)">Add to Cart</button>
+    </div>
+    
+    <div class='card'>
+        <img src='assets/product6.png'>
+        <h3>Brightening Serum</h3>
+        <p class='price'>SAR 120</p>
+        <button onclick="addToCart('Brightening Serum',120)">Add to Cart</button>
+    </div>
+    
+    <div class='card'>
+        <img src='assets/product7.png'>
+        <h3>Facial Oil</h3>
+        <p class='price'>SAR 70</p>
+        <button onclick="addToCart('Facial Oil',70)">Add to Cart</button>
+    </div>
+    
+    <div class='card'>
+        <img src='assets/product8.png'>
+        <h3>Eye Cream</h3>
+        <p class='price'>SAR 89</p>
+        <button onclick="addToCart('Eye Cream',89)">Add to Cart</button>
+    </div>
+    
+    <div class='card'>
+        <img src='assets/product9.png'>
+        <h3>Mineral Sunscreen</h3>
+        <p class='price'>SAR 105</p>
+        <button onclick="addToCart('Mineral Sunscreen',105)">Add to Cart</button>
+    </div>
+    
+</div>
+
+<div id='cartPanel' class='panel'>
+<h3>Your Cart</h3>
+<ul id='items'></ul>
+<p class='total'>Total: SAR <span id='total'>0</span></p>
+<button onclick='checkout()'>Checkout</button>
+<button onclick='toggleCart()'>Close</button>
+</div>
+
+<script src='script.js'></script>
+</body>
+</html>

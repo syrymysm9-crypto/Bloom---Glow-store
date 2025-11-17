@@ -1,0 +1,10 @@
+
+body{font-family:Arial;background:#fff7f7;margin:0;}
+.header{display:flex;justify-content:space-between;padding:20px;background:white;}
+.grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:20px;}
+.card{background:white;padding:20px;border-radius:15px;width:220px;box-shadow:0 4px 15px rgba(0,0,0,0.1);text-align:center;}
+.card img{width:100%;border-radius:10px;}
+.price{color:#d48a9e;font-weight:bold;}
+button{padding:10px 15px;background:#d8a6b2;border:none;border-radius:8px;color:white;cursor:pointer;}
+.panel{position:fixed;right:-350px;top:0;width:320px;height:100%;background:white;padding:20px;transition:.4s;box-shadow:-2px 0 10px rgba(0,0,0,0.1);}
+.panel.open{right:0;}
