@@ -88,9 +88,11 @@ nav a {
 }
 
 .card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 10px;
+  width: 140px;
+  height: 180px;
+  object-fit: contain;
+ display: block;
+  margin: 0 auto 10px auto;
 }
 
 .price {
